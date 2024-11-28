@@ -19,6 +19,11 @@
     - name: Create .aws folder
       shell: mkdir -p /root/.aws
       ignore_errors: yes
+    - name: install passlib package
+      apt:
+        name: python3-passlib
+        state: present
+      become: yes
     - name: Copy Encrypted File To /tmp
       copy:
         src: /tmp/{{item}} #This Encrypted File Must Be Created Prior To Running The Playbook.
