@@ -2,7 +2,7 @@ Adding ansible root public key to the nodes using the user_data:
 echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGRZxboAIFQ0ZwVENXrRGqQhgIiNML/du22Y2t+vNgrX root@ip-172-31-36-176' >> /root/.ssh/authorized_keys
 
 
-------------------------------------------CACHING-ANSIBLE-FACTS----------------------------------------
+----------------------------------------CACHING-ANSIBLE-FACTS----------------------------------------
 To configure fact caching using redis, enable it in ansible.cfg as follows:
 [defaults]
 gathering = smart
