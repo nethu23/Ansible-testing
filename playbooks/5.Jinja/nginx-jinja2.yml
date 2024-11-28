@@ -28,12 +28,12 @@
       tags:
         - install
     - name: Copy the index.j2 Template to index destination folder
-  template:
-    src: playbooks/5.Jinja/index.j2
-    dest: /var/www/html/index.nginx-debian.html
-    owner: root
-    group: root
-    mode: '0644'
+      template:
+        src: playbooks/5.Jinja/index.j2
+        dest: /var/www/html/index.nginx-debian.html
+        owner: root
+        group: root
+        mode: "0644"
 
       notify: Restart Nginx
       tags:
